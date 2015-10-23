@@ -75,4 +75,12 @@
     <string name="qs_show_data_usage_title">Show data usage</string>
     <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
 
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Media cover art</string>
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Display media cover art when available</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Media art blur level</string>
+
 </resources>
