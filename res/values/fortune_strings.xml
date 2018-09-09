@@ -34,6 +34,9 @@
     <string name="buttons_title">Buttons</string>
     <string name="miscellaneous_title">Miscellaneous</string>
 
+    <!-- Sub Categories -->
+    <string name="general_category">General</string>
+
     <!-- Statusbar tuner -->
     <string name="statusbar_tuner_title">Statusbar icons</string>
     <string name="statusbar_tuner_title_summary">Enable or disable many statusbar icons</string>
@@ -41,4 +44,9 @@
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth battery status</string>
     <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
+
+    <!-- AOSP Gestures -->
+    <string name="aosp_gesture_preference">System settings</string>
+    <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
+
 </resources>
