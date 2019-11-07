@@ -12,6 +12,7 @@
 
     <!-- Category -->
     <string name="craft_status_bar_category">Status bar</string>
+    <string name="craft_misc_category">Misc</string>
 
     <!-- Statusbar network traffic monitor -->
     <string name="network_traffic_state_title">Network traffic display</string>
@@ -42,4 +43,8 @@
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
 </resources>

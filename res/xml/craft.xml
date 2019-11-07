@@ -40,4 +40,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="craft_misc_category"
+        android:title="@string/craft_misc_category">
+
+        <org.fortune.framework.preferences.SystemSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
