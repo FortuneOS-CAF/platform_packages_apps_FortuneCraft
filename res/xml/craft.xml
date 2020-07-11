@@ -17,6 +17,13 @@
         android:key="craft_status_bar_category"
         android:title="@string/craft_status_bar_category">
 
+        <Preference
+            android:key="icon_manager"
+            android:title="@string/icon_manager_title"
+            android:summary="@string/icon_manager_summary">
+            <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+        </Preference>
+
         <!-- Network Traffic Monitor -->
         <org.fortune.framework.preferences.SystemSettingMasterSwitchPreference
             android:key="network_traffic_state"
