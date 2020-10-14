@@ -13,4 +13,17 @@
         android:selectable="false"
         settings:searchable="false"/>
 
+    <PreferenceCategory
+        android:key="craft_status_bar_category"
+        android:title="@string/craft_status_bar_category">
+
+        <!-- Network Traffic Monitor -->
+        <org.fortune.framework.preferences.SystemSettingMasterSwitchPreference
+            android:key="network_traffic_state"
+            android:title="@string/network_traffic_state_title"
+            android:fragment="org.fortune.craft.category.NetTrafficMonSettings"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
