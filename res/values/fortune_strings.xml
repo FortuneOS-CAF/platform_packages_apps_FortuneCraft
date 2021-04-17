@@ -34,4 +34,8 @@
     <string name="buttons_title">Buttons</string>
     <string name="miscellaneous_title">Miscellaneous</string>
 
+    <!-- Statusbar tuner -->
+    <string name="statusbar_tuner_title">Statusbar icons</string>
+    <string name="statusbar_tuner_title_summary">Enable or disable many statusbar icons</string>
+
 </resources>
