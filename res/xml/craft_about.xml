@@ -42,6 +42,17 @@
                 android:data="https://github.com/FortuneOS-CAF" />
         </Preference>
 
+        <Preference
+            android:key="fortune_changelog"
+            android:title="@string/changelog_title"
+            android:summary="@string/changelog_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/ic_changelog">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="org.fortune.craft.category.ChangelogActivity"/>
+        </Preference>
+
     <PreferenceCategory
         android:key="about_developer"
         android:title="@string/fortune_about_dev" >
