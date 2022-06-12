@@ -43,4 +43,10 @@
         android:summary="@string/quick_settings_quick_pull_down_summary"
         android:defaultValue="false" />
 
+    <org.fortune.framework.preferences.SecureSettingSwitchPreference
+        android:key="qs_show_data_usage"
+        android:title="@string/qs_show_data_usage_title"
+        android:summary="@string/qs_show_data_usage_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
