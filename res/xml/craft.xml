@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/craft_title">
+
+    <!-- Status Bar -->
+    <Preference
+        android:key="craft_statusbar"
+        android:title="@string/craft_statusbar_title"
+        android:summary="@string/craft_statusbar_summary"
+        android:fragment="org.fortune.craft.category.Statusbar"
+        android:icon="@drawable/ic_statusbar"/>
+
+    <!-- Quick Settings -->
+    <Preference
+        android:key="craft_quicksettings"
+        android:title="@string/craft_quicksettings_title"
+        android:summary="@string/craft_quicksettings_summary"
+        android:fragment="org.fortune.craft.category.QuickSettings"
+        android:icon="@drawable/ic_quicksettings"/>
+
+    <!-- Navigation -->
+    <Preference
+        android:key="craft_navigation"
+        android:title="@string/craft_navigation_title"
+        android:summary="@string/craft_navigation_summary"
+        android:fragment="org.fortune.craft.category.Navigation"
+        android:icon="@drawable/ic_navigation"/>
+
+    <!-- Lockscreen -->
+    <Preference
+        android:key="craft_lockscreen"
+        android:title="@string/craft_lockscreen_title"
+        android:summary="@string/craft_lockscreen_summary"
+        android:fragment="org.fortune.craft.category.LockScreen"
+        android:icon="@drawable/ic_lockscreen"/>
+
+    <!-- Misc -->
+    <Preference
+        android:key="craft_misc"
+        android:title="@string/craft_misc_title"
+        android:summary="@string/craft_misc_summary"
+        android:fragment="org.fortune.craft.category.Misc"
+        android:icon="@drawable/ic_misc"/>
+
+</PreferenceScreen>

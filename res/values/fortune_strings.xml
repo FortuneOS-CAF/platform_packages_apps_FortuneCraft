@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Craft -->
+    <string name="craft_title">Fortune Craft</string>
+    <string name="craft_summary">Craft your imagination here!</string>
+
+    <!-- Categories -->
+    <string name="craft_lockscreen_title">Lock screen</string>
+    <string name="craft_misc_title">Miscellaneous</string>
+    <string name="craft_navigation_title">Navigation bar</string>
+    <string name="craft_quicksettings_title">Quick Settings</string>
+    <string name="craft_statusbar_title">Status bar</string>
+    <string name="craft_lockscreen_summary">Lock screen settings and security</string>  
+    <string name="craft_misc_summary">Extra settings</string>  
+    <string name="craft_navigation_summary">Navigation bar options</string>  
+    <string name="craft_quicksettings_summary">Quick Settings customization</string>  
+    <string name="craft_statusbar_summary">Status bar preferences</string>
+
+</resources>
