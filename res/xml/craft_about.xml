@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/craft_about_title" >
+
+    <PreferenceCategory
+        android:key="fortune_about_info"
+        android:title="@string/fortune_about_info" />
+
+        <Preference
+            android:title="@string/fortune_website_title"
+            android:summary="@string/fortune_website_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/ic_website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://fortuneos.web.id" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_telegram_title"
+            android:summary="@string/fortune_telegram_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/ic_telegram">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/FortuneOSChat" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_github_title"
+            android:summary="@string/fortune_github_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/ic_github">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/FortuneOS-CAF" />
+        </Preference>
+
+    <PreferenceCategory
+        android:key="about_developer"
+        android:title="@string/fortune_about_dev" >
+
+        <Preference
+            android:title="@string/fortune_about_geeky"
+            android:summary="@string/fortune_about_geeky_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/geeky">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Kizziama" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_luigiee"
+            android:summary="@string/fortune_about_luigiee_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/luigiee">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Luigiee" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_mikazu"
+            android:summary="@string/fortune_about_mikazu_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/mikazu">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Mikazuuu07" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_ramadhani"
+            android:summary="@string/fortune_about_ramadhani_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/rmdni">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/ramaadni" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="about_contributor"
+        android:title="@string/fortune_about_con" >
+
+        <Preference
+            android:title="@string/fortune_about_piyyy"
+            android:summary="@string/fortune_about_piyyy_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/piyyy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/piyskrrt" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_soni"
+            android:summary="@string/fortune_about_soni_summary"
+            settings:layout="@layout/craft_about_card"
+            android:icon="@drawable/soni">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/StartTrueDreams" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
