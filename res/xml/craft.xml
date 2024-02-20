@@ -9,6 +9,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/craft_dashboard_title">
 
+    <!-- Header -->
+    <Preference
+        android:key="craft_header"
+        settings:layout="@layout/dashboard_header"/>
+
     <!-- Themes -->
     <Preference
         android:key="themes"

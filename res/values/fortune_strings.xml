@@ -8,6 +8,10 @@
     <!-- FortuneCraft -->
     <string name="craft_dashboard_title">FortuneCraft</string>
     <string name="craft_dashboard_summary">Craft your imagination</string>
+    <string name="craft_header_title">What is FortuneOS?</string>
+
+    <!-- About Fortune -->
+    <string name="fortune_about_desc">Fortune OS is a fork of LineageOS. With addintial feature and design enchanment</string>
 
     <!-- Categories -->
     <string name="themes_title">Themes</string>
