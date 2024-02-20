@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="About Team" >
+
+    <PreferenceCategory
+        android:key="about_developer"
+        android:title="@string/fortune_about_dev" />
+
+        <Preference
+            android:title="@string/fortune_about_geeky"
+            android:summary="@string/fortune_about_geeky_summary"
+            android:icon="@drawable/geeky"
+            settings:layout="@layout/team_card">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Kizziama" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_luigiee"
+            android:summary="@string/fortune_about_luigiee_summary"
+            android:icon="@drawable/luigiee"
+            settings:layout="@layout/team_card">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Luigiee" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_mikazu"
+            android:summary="@string/fortune_about_mikazu_summary"
+            android:icon="@drawable/mikazu"
+            settings:layout="@layout/team_card">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Mikazuuu07" />
+        </Preference>
+
+        <Preference
+            android:title="@string/fortune_about_piyyy"
+            android:summary="@string/fortune_about_piyyy_summary"
+            android:icon="@drawable/piyyy"
+            settings:layout="@layout/team_card">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/piyskrrt" />
+        </Preference>
+
+</PreferenceScreen>

@@ -11,7 +11,18 @@
     <string name="craft_header_title">What is FortuneOS?</string>
 
     <!-- About Fortune -->
+    <string name="team_title">Fortune Team</string>
+    <string name="team_title_summary">Tap here to know more about Fortune Team</string>
     <string name="fortune_about_desc">Fortune OS is a fork of LineageOS. With addintial feature and design enchanment</string>
+    <string name="fortune_about_dev">Developer</string>
+    <string name="fortune_about_geeky" translatable="false">Geeky</string>
+    <string name="fortune_about_geeky_summary">Founder / Lead Developer</string>
+    <string name="fortune_about_luigiee" translatable="false">Luigiee</string>
+    <string name="fortune_about_luigiee_summary">Co Founder / Lead Developer</string>
+    <string name="fortune_about_mikazu" translatable="false">Mikazuuu07</string>
+    <string name="fortune_about_mikazu_summary">Lead Developer</string>
+    <string name="fortune_about_piyyy" translatable="false">Piyyy</string>
+    <string name="fortune_about_piyyy_summary">Core Contributor</string>
 
     <!-- Categories -->
     <string name="themes_title">Themes</string>
