@@ -49,4 +49,8 @@
     <string name="aosp_gesture_preference">System settings</string>
     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
 
+    <!-- Quick Settings quick pulldown -->
+    <string name="quick_settings_quick_pull_down_title">Quick QS pulldown</string>
+    <string name="quick_settings_quick_pull_down_summary">Pull down statusbar from right side to expand quick settings</string>
+
 </resources>
