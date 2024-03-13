@@ -9,6 +9,21 @@
     android:title="About Team" >
 
     <PreferenceCategory
+        android:key="source_changelog"
+        android:title="Source changelogs" />
+
+        <Preference
+            android:key="fortune_changelog"
+            android:icon="@drawable/ic_changelog"
+            android:title="@string/changelog_fortune_title"
+            android:summary="@string/changelog_fortune_summary"
+            settings:layout="@layout/team_card">
+            <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="org.fortune.craft.fragments.ChangelogActivity"/>
+        </Preference>
+
+    <PreferenceCategory
         android:key="about_developer"
         android:title="@string/fortune_about_dev" />
 

@@ -108,4 +108,9 @@
     <string name="network_traffic_autohide_title">Hide network traffic indicator if inactive</string>
     <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1KB/s</string>
 
+    <!-- Changelog -->
+    <string name="changelog_fortune_title">Current changelog</string>
+    <string name="changelog_fortune_summary">View changes in the ROM installed</string>
+    <string name="changelog_fortune_error">Unable to load changelog</string>
+
 </resources>
