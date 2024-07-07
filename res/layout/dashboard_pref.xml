@@ -71,16 +71,6 @@
 
     </RelativeLayout>
 
-        <TextView
-            android:id="@android:id/summary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@android:id/title"
-            android:layout_alignStart="@android:id/title"
-            android:layout_marginTop="4dp"
-            android:singleLine="true"
-            style="@style/custom_text_secondary" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

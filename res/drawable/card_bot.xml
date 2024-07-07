@@ -24,7 +24,7 @@
                 android:topLeftRadius="@dimen/custom_pref_card_radius-outer"
                 android:bottomLeftRadius="@dimen/custom_pref_card_radius"
                 android:bottomRightRadius="@dimen/custom_pref_card_radius"
-                 />
+            />
         </shape>
     </item>
     <item android:id="@android:id/background">

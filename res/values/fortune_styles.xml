@@ -23,4 +23,70 @@
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
 
+    <!-- Dashboard -->
+    <style name="fortuneDashboardPreferenceSingle" parent="fortunePreferenceSingle">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="fortuneDashboardPreferenceTop" parent="fortunePreferenceTop">
+        <item name="android:layout_marginTop">@dimen/custom_pref_card_horizontal_padding</item>
+    </style>
+
+    <style name="fortuneDashboardPreferenceBottom" parent="fortunePreferenceBottom">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="fortuneDashboardPreferenceFull" parent="fortunePreferenceFull">
+        <item name="android:layout_marginTop">@dimen/custom_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="fortuneDashboardPreferenceFullAccent" parent="fortuneDashboardPreferenceFull">
+        <item name="android:background">@drawable/card_full_accent</item>
+    </style>
+
+    <style name="fortuneDashboardPreferencePhone" parent="fortuneDashboardPreferenceTop">
+        <item name="android:background">@drawable/card_phone</item>
+    </style>
+
+    <!-- General -->
+    <style name="fortunePreferenceSingle" parent="fortunePreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/card_sin</item>
+    </style>
+
+    <style name="fortunePreferenceBase">
+        <item name="android:layout_marginStart">@dimen/custom_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/custom_pref_card_horizontal_padding</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="fortunePreferenceTop" parent="fortunePreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/card_top</item>
+    </style>
+
+    <style name="fortunePreferenceMiddle" parent="fortunePreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/card_mid</item>
+    </style>
+
+    <style name="fortunePreferenceBottom" parent="fortunePreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/card_bot</item>
+    </style>
+
+    <style name="fortunePreferenceFull" parent="fortunePreferenceBase">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/card_full</item>
+    </style>
+
+    <style name="fortunePreferenceFullAccent" parent="fortunePreferenceBase">
+        <item name="android:layout_marginTop">@dimen/custom_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/card_full_accent</item>
+    </style>
+
 </resources>

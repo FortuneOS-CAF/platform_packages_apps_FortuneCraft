@@ -16,12 +16,12 @@
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/container"
-    style="@style/fortuneDashboardPreferenceBottom"
+    style="@style/fortuneDashboardPreferenceSingle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <include
-        layout="@layout/dashboard_pref"
+        layout="@layout/dashboard_pref_sin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
