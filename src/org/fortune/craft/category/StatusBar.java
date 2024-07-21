@@ -47,13 +47,6 @@ public class StatusBar extends SettingsPreferenceFragment implements
         return false;
     }
 
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-
-        Settings.System.putIntForUser(resolver,
-                Settings.System.BLUETOOTH_SHOW_BATTERY, 1, UserHandle.USER_CURRENT);
-    }
-
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.FORTUNE;
