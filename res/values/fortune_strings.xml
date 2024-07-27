@@ -127,4 +127,21 @@
     <string name="themes_wifi_icon_title">Wi-Fi icon</string>
     <string name="themes_wifi_icon_summary">Set Wi-Fi icon style</string>
 
+    <!-- Spoof and Playintegrity -->
+    <string name="fortune_spoofing_dashboard_title">Spoofing</string>
+    <string name="spoofing_summary">Adjust spoofing settings</string>
+    <string name="spoof_gphotos">Google Photos Unlimited</string>
+    <string name="spoof_gphotos_summary">Spoof device as a Pixel XL for unlimited Google Photos backup</string>
+    <string name="spoof_gapps">Spoof Google Apps</string>
+    <string name="spoof_gapps_summary">Spoof Google Apps to have Pixel exclusives features</string>
+    <string name="spoof_games">Spoof Games</string>
+    <string name="spoof_games_summary">Spoof device according to partnerships to unlock higher FPS in some games</string>
+    <string name="spoofing_footer_summary">Apps may needs to be closed once after enabling spoofing.</string>
+    <string name="fortune_play_integrity_dashboard_title">Play Integrity</string>
+    <string name="play_integrity_summary">Adjust Play Integrity settings</string>
+    <string name="play_integrity_update_title">Update Play Integrity</string>
+    <string name="play_integrity_update_summary">Apply latest spoof</string>
+    <string name="play_update_title">Update</string>
+    <string name="play_fingerprint">Spoofed values</string>
+
 </resources>
