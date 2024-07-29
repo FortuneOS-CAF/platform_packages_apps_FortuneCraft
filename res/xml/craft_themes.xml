@@ -10,6 +10,18 @@
     android:title="@string/themes_title">
 
     <PreferenceCategory
+        android:key="black_theme_category"
+        android:title="@string/system_black_theme_category">
+
+        <!-- Black theme -->
+        <org.fortune.framework.preferences.SecureSettingSwitchPreference
+             android:key="system_black_theme"
+             android:title="@string/system_black_theme_title"
+             android:summary="@string/system_black_theme_summary"
+             android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="themes_fonts_category"
         android:title="@string/themes_fonts_category">
 
