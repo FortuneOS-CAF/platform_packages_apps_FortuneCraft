@@ -13,7 +13,7 @@
     <!-- About Fortune -->
     <string name="team_title">Fortune Team</string>
     <string name="team_title_summary">Tap here to know more about Fortune Team</string>
-    <string name="fortune_about_desc">Fortune OS is a fork of LineageOS. With addintial feature and design enchanment</string>
+    <string name="fortune_about_desc">Fortune OS is Custom ROM based from CodeLinaro. With addintial feature and design enchanment</string>
     <string name="fortune_about_dev">Developer</string>
     <string name="fortune_about_geeky" translatable="false">Geeky</string>
     <string name="fortune_about_geeky_summary">Founder / Lead Developer</string>
