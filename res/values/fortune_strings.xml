@@ -5,14 +5,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Fortune Craft -->
+    <!-- Craft -->
     <string name="craft_title">Fortune Craft</string>
-    <string name="craft_footer">These features are experimental.</string>
-    <string name="craft_summary">Experimental features</string>
+    <string name="craft_summary">Craft your imagination here!</string>
 
-    <!-- Category -->
-    <string name="craft_status_bar_category">Status bar</string>
-    <string name="craft_misc_category">Misc</string>
+    <!-- Categories -->
+    <string name="craft_lockscreen_title">Lock screen</string>
+    <string name="craft_misc_title">Miscellaneous</string>
+    <string name="craft_navigation_title">Navigation bar</string>
+    <string name="craft_quicksettings_title">Quick Settings</string>
+    <string name="craft_statusbar_title">Status bar</string>
 
     <!-- Statusbar network traffic monitor -->
     <string name="network_traffic_state_title">Network traffic display</string>

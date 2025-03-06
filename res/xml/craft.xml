@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2024-2025 FortuneOS
      SPDX-License-Identifier: Apache-2.0
@@ -8,54 +9,39 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/craft_title">
 
-    <com.android.settingslib.widget.FooterPreference
-        android:title="@string/craft_footer"
-        android:selectable="false"
-        settings:searchable="false"/>
+    <!-- Status Bar -->
+    <Preference
+        android:key="craft_statusbar"
+        android:title="@string/craft_statusbar_title"
+        android:fragment="org.fortune.craft.category.Statusbar"
+        android:icon="@drawable/ic_craft_statusbar"/>
 
-    <PreferenceCategory
-        android:key="craft_status_bar_category"
-        android:title="@string/craft_status_bar_category">
+    <!-- Quick Settings -->
+    <Preference
+        android:key="craft_quicksettings"
+        android:title="@string/craft_quicksettings_title"
+        android:fragment="org.fortune.craft.category.QuickSettings"
+        android:icon="@drawable/ic_craft_quicksettings"/>
 
-        <Preference
-            android:key="icon_manager"
-            android:title="@string/icon_manager_title"
-            android:summary="@string/icon_manager_summary">
-            <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
-        </Preference>
+    <!-- Navigation -->
+    <Preference
+        android:key="craft_navigation"
+        android:title="@string/craft_navigation_title"
+        android:fragment="org.fortune.craft.category.Navigation"
+        android:icon="@drawable/ic_craft_navigation"/>
 
-        <!-- Network Traffic Monitor -->
-        <org.fortune.framework.preferences.SystemSettingMasterSwitchPreference
-            android:key="network_traffic_state"
-            android:title="@string/network_traffic_state_title"
-            android:fragment="org.fortune.craft.category.NetTrafficMonSettings"
-            android:defaultValue="false" />
+    <!-- Lockscreen -->
+    <Preference
+        android:key="craft_lockscreen"
+        android:title="@string/craft_lockscreen_title"
+        android:fragment="org.fortune.craft.category.LockScreen"
+        android:icon="@drawable/ic_craft_lockscreen"/>
 
-        <!-- Double tap to sleep -->
-        <org.fortune.framework.preferences.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_gesture"
-            android:title="@string/status_bar_double_tap_to_sleep_title"
-            android:summary="@string/status_bar_double_tap_to_sleep_summary"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="craft_misc_category"
-        android:title="@string/craft_misc_category">
-
-        <org.fortune.framework.preferences.SystemSettingSwitchPreference
-            android:key="advanced_reboot"
-            android:title="@string/global_actions_advanced_reboot_title"
-            android:summary="@string/global_actions_advanced_reboot_summary"
-            android:defaultValue="false" />
-
-        <org.fortune.framework.preferences.GlobalSettingSwitchPreference
-            android:key="window_ignore_secure"
-            android:title="@string/ignore_window_secure_title"
-            android:summary="@string/ignore_window_secure_summary"
-            android:defaultValue="false"/>
-
-    </PreferenceCategory>
+    <!-- Misc -->
+    <Preference
+        android:key="craft_misc"
+        android:title="@string/craft_misc_title"
+        android:fragment="org.fortune.craft.category.Misc"
+        android:icon="@drawable/ic_craft_misc"/>
 
 </PreferenceScreen>

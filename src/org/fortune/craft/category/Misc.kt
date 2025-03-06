@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.fortune.craft
+package org.fortune.craft.category
 
 import com.android.internal.logging.nano.MetricsProto
 import com.android.settings.dashboard.DashboardFragment
@@ -12,10 +12,10 @@ import com.android.settings.search.BaseSearchIndexProvider
 import com.android.settingslib.search.SearchIndexable
 
 @SearchIndexable
-class FortuneCraft : DashboardFragment() {
+class Misc : DashboardFragment() {
 
     override fun getPreferenceScreenResId(): Int {
-        return R.xml.craft
+        return R.xml.craft_misc
     }
 
     override fun getMetricsCategory(): Int {
@@ -27,9 +27,9 @@ class FortuneCraft : DashboardFragment() {
     }
 
     companion object {
-        private const val TAG = "FortuneCraft"
+        private const val TAG = "Misc"
 
         @JvmField
-        val SEARCH_INDEX_DATA_PROVIDER = BaseSearchIndexProvider(R.xml.craft)
+        val SEARCH_INDEX_DATA_PROVIDER = BaseSearchIndexProvider(R.xml.craft_misc)
     }
 }

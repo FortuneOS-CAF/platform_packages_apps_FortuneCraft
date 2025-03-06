@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/craft_statusbar_title">
+
+    <!-- Icon manager -->
+    <Preference
+        android:key="icon_manager"
+        android:title="@string/icon_manager_title"
+        android:summary="@string/icon_manager_summary">
+        <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+    </Preference>
+
+    <!-- Network Traffic Monitor -->
+    <org.fortune.framework.preferences.SystemSettingMasterSwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:fragment="org.fortune.craft.category.NetTrafficMonSettings"
+        android:defaultValue="false" />
+
+     
+    <!-- Double tap to sleep -->
+    <org.fortune.framework.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/status_bar_double_tap_to_sleep_title"
+        android:summary="@string/status_bar_double_tap_to_sleep_summary"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

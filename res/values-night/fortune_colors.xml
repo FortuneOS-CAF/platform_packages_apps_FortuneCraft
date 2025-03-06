@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+
+    <!-- Homepage icon -->
+    <color name="homepage_icon_bg">@*android:color/system_neutral2_700</color>
+    <color name="homepage_subicon_bg">?android:attr/colorAccent</color>
+</resources>
