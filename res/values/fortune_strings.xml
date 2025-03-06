@@ -15,6 +15,11 @@
     <string name="craft_navigation_title">Navigation bar</string>
     <string name="craft_quicksettings_title">Quick Settings</string>
     <string name="craft_statusbar_title">Status bar</string>
+    <string name="craft_statusbar_summary">Customize the appearance and behavior of your status bar.</string>
+    <string name="craft_quicksettings_summary">Modify quick settings tiles, layout, and appearance.</string>
+    <string name="craft_navigation_summary">Adjust navigation bar settings, gestures, and button layout.</string>
+    <string name="craft_lockscreen_summary">Personalize your lockscreen with widgets, shortcuts, and styles.</string>
+    <string name="craft_misc_summary">Other customization options and additional tweaks.</string>
 
     <!-- Statusbar network traffic monitor -->
     <string name="network_traffic_state_title">Network traffic display</string>

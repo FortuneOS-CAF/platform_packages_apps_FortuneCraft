@@ -3,14 +3,9 @@
      Copyright (C) 2024-2025 FortuneOS
      SPDX-License-Identifier: Apache-2.0
 -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:viewportHeight="24"
-    android:viewportWidth="24"
-    android:width="24dp">
-  <path
-      android:fillColor="#00000000"
-      android:pathData="M12,14.5V16.5M7,10.029C7.471,10 8.053,10 8.8,10H15.2C15.947,10 16.529,10 17,10.029M7,10.029C6.412,10.065 5.994,10.146 5.638,10.327C5.074,10.615 4.615,11.073 4.327,11.638C4,12.28 4,13.12 4,14.8V16.2C4,17.88 4,18.72 4.327,19.362C4.615,19.927 5.074,20.385 5.638,20.673C6.28,21 7.12,21 8.8,21H15.2C16.88,21 17.72,21 18.362,20.673C18.927,20.385 19.385,19.927 19.673,19.362C20,18.72 20,17.88 20,16.2V14.8C20,13.12 20,12.28 19.673,11.638C19.385,11.073 18.927,10.615 18.362,10.327C18.006,10.146 17.588,10.065 17,10.029M7,10.029V8C7,5.239 9.239,3 12,3C14.761,3 17,5.239 17,8V10.029"
-      android:strokeColor="#000000" android:strokeLineCap="round"
-      android:strokeLineJoin="round" android:strokeWidth="2"/>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp"
+    android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path
+        android:pathData="M12 2c2.21 0 4 1.79 4 4v2h1.75C18.993 8 20 9.007 20 10.25v9.5c0 1.243-1.007 2.25-2.25 2.25H6.25C5.007 22 4 20.993 4 19.75v-9.5C4 9.007 5.007 8 6.25 8H8V6c0-2.21 1.79-4 4-4zm5.75 7.5H6.25c-0.414 0-0.75 0.336-0.75 0.75v9.5c0 0.414 0.336 0.75 0.75 0.75h11.5c0.414 0 0.75-0.336 0.75-0.75v-9.5c0-0.414-0.336-0.75-0.75-0.75zm-5.75 4c0.829 0 1.5 0.672 1.5 1.5s-0.671 1.5-1.5 1.5c-0.828 0-1.5-0.672-1.5-1.5s0.672-1.5 1.5-1.5zm0-10c-1.38 0-2.5 1.12-2.5 2.5v2h5V6c0-1.38-1.12-2.5-2.5-2.5z"
+        android:fillColor="@color/homepage_subicon_bg" />
 </vector>

@@ -8,4 +8,8 @@
     <!-- Homepage icon -->
     <color name="homepage_icon_bg">@*android:color/system_neutral2_50</color>
     <color name="homepage_subicon_bg">?android:attr/colorAccent</color>
+
+    <!-- Card colors -->
+    <color name="craft_card_color">@android:color/system_neutral1_0</color>
+    <color name="craft_arrow_bg">@android:color/system_neutral1_50</color>
 </resources>
