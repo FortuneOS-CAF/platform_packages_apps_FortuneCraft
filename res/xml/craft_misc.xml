@@ -29,4 +29,11 @@
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary" />
 
+    <!-- App downgrade -->
+    <org.fortune.framework.preferences.GlobalSettingSwitchPreference
+       android:key="pm_downgrade_allowed"
+       android:title="@string/app_downgrade_title"
+       android:summary="@string/app_downgrade_summary"
+       android:defaultValue="false" /> 
+
 </PreferenceScreen>

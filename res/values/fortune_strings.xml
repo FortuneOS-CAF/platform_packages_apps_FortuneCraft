@@ -62,4 +62,8 @@
     <!-- Pocket mode -->
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
+    <!-- App downgrade -->
+    <string name="app_downgrade_title">Allow package downgrade</string>
+    <string name="app_downgrade_summary">Allow installation of lower version of an app</string>
 </resources>
