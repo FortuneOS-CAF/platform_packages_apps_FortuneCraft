@@ -9,6 +9,13 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/craft_misc_title">
 
+    <!-- Google Play Integrity -->
+    <org.fortune.framework.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pihooks.pi"
+        android:title="@string/pi_spoof_title"
+        android:summary="@string/pi_spoof_summary"
+        android:defaultValue="true" />
+
     <!-- Advanced reboot -->
     <org.fortune.framework.preferences.SystemSettingSwitchPreference
         android:key="advanced_reboot"
