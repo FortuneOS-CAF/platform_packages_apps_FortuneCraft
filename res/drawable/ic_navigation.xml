@@ -7,13 +7,13 @@
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="24"
-    android:viewportHeight="24">
-
-    <path
-        android:fillColor="@color/homepage_subicon_bg"
-        android:strokeColor="@color/homepage_subicon_bg"
-        android:strokeWidth="2"
-        android:strokeLineJoin="round"
-        android:strokeLineCap="round"
-        android:pathData="M4.47046 17.0591L10.2111 5.57771C10.9482 4.10361 13.0518 4.10362 13.7889 5.57771L19.5295 17.0591C20.3661 18.7322 18.6528 20.5356 16.9391 19.7858L12.4008 17.8004C12.1453 17.6886 11.8547 17.6886 11.5992 17.8004L7.06094 19.7858C5.34719 20.5356 3.6339 18.7322 4.47046 17.0591Z" />
+    android:viewportHeight="24"
+    android:tint="?android:attr/colorControlNormal">
+  <path
+      android:pathData="M12,2.5l-8,19l8,-2.1l8,2.1l-8,-19"
+      android:strokeLineJoin="round"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFF"
+      android:strokeLineCap="round"/>
 </vector>

@@ -22,4 +22,10 @@
         <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+
+    <style name="fortune_text_head">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/fortune_text_header_color</item>
+        <item name="android:fontFamily">@font/Poppins-Black</item>
+    </style>
 </resources>

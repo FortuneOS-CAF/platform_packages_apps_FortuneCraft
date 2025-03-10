@@ -9,6 +9,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/craft_title">
 
+    <!-- Craft Header -->
+    <Preference
+        android:key="craft_header"
+        android:selectable="false"
+        settings:layout="@layout/craft_header"/>
+
     <!-- Status Bar -->
     <Preference
         android:key="craft_statusbar"
