@@ -21,6 +21,13 @@
     <string name="craft_lockscreen_summary">Personalize your lockscreen with widgets, shortcuts, and styles.</string>
     <string name="craft_misc_summary">Other customization options and additional tweaks.</string>
 
+    <!-- Hardware info -->
+    <string name="fortune_battery_capacity">Battery capacity</string>
+    <string name="fortune_ram">RAM</string>
+    <string name="fortune_camera">Camera</string>
+    <string name="fortune_processor">Processor</string>
+    <string name="fortune_display">Display</string>
+
     <!-- Statusbar network traffic monitor -->
     <string name="network_traffic_state_title">Network traffic display</string>
     <string name="network_traffic_state_summary">Showing on</string>
