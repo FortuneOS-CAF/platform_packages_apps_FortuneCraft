@@ -14,4 +14,10 @@
         android:summary="@string/navbar_invert_info"
         android:defaultValue="false" />
 
+    <org.fortune.framework.preferences.SecureSettingSwitchPreference
+        android:key="navigation_bar_hint"
+        android:title="@string/hide_navbar_gesture_bar_title"
+        android:summary="@string/hide_navbar_gesture_bar_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
