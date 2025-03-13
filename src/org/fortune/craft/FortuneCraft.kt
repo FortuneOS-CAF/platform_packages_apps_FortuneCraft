@@ -27,6 +27,7 @@ class FortuneCraft : DashboardFragment() {
     }
 
     companion object {
+        const val CATEGORY_KEY = "com.android.settings.category.ia.craft"
         private const val TAG = "FortuneCraft"
 
         @JvmField
