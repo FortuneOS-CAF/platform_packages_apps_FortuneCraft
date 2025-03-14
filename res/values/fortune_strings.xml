@@ -51,6 +51,7 @@
     <string name="fortune_about_soni_summary">Core Contributor</string>
 
     <!-- Hardware info -->
+    <string name="fortune_device_codename">Device codename</string>
     <string name="fortune_battery_capacity">Battery capacity</string>
     <string name="fortune_ram">RAM</string>
     <string name="fortune_camera">Camera</string>

@@ -8,13 +8,11 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
         app:cardBackgroundColor="@color/craft_card_color"
-        app:cardCornerRadius="28dp"
+        app:cardCornerRadius="22dp"
         app:cardElevation="0dp">
 
         <LinearLayout
@@ -29,10 +27,33 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
+                <!-- Device Codename Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fortune_device_codename"
+                        android:textSize="14sp"
+                        style="@style/fortune_text_summary"/>
+
+                    <TextView
+                        android:id="@+id/fortune_device_codename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        style="@style/fortune_text_title"/>
+                </LinearLayout>
+
                 <!-- Battery Info -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
                     <TextView

@@ -23,35 +23,32 @@ import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-
 public class WallpaperBlurView extends ImageView {
 
-    Context contextM;
+  Context contextM;
 
-    public WallpaperBlurView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        contextM = context;
-        setRenderEffect(RenderEffect.createBlurEffect(18, 18, Shader.TileMode.CLAMP));
-    }
+  public WallpaperBlurView(Context context, AttributeSet attrs, int defStyleAttr) {
+    super(context, attrs, defStyleAttr);
+    contextM = context;
+    setRenderEffect(RenderEffect.createBlurEffect(18, 18, Shader.TileMode.CLAMP));
+  }
 
-    public WallpaperBlurView(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        contextM = context;
-        setRenderEffect(RenderEffect.createBlurEffect(18, 18, Shader.TileMode.CLAMP));
-    }
+  public WallpaperBlurView(Context context, AttributeSet attrs) {
+    super(context, attrs);
+    contextM = context;
+    setRenderEffect(RenderEffect.createBlurEffect(18, 18, Shader.TileMode.CLAMP));
+  }
 
+  public WallpaperBlurView(Context context) {
+    super(context);
+    contextM = context;
+    setRenderEffect(RenderEffect.createBlurEffect(18, 18, Shader.TileMode.CLAMP));
+  }
 
-    public WallpaperBlurView(Context context) {
-        super(context);
-        contextM = context;
-        setRenderEffect(RenderEffect.createBlurEffect(18, 18, Shader.TileMode.CLAMP));
-    }
-
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
-        WallpaperManager wallpaperManager = WallpaperManager.getInstance(contextM);
-        setImageDrawable(wallpaperManager.getDrawable());
-    }
-
+  @Override
+  protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+    super.onSizeChanged(w, h, oldw, oldh);
+    WallpaperManager wallpaperManager = WallpaperManager.getInstance(contextM);
+    setImageDrawable(wallpaperManager.getDrawable());
+  }
 }

@@ -1,56 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="24dp"
-    android:layout_marginVertical="20dp"
-    app:cardCornerRadius="22dp"
-    app:cardElevation="0dp">
+    android:background="@android:color/transparent">
 
-    <FrameLayout
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp">
 
-        <org.fortune.widget.WallpaperBlurView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:elevation="0dp"
-            android:gravity="center"
-            android:orientation="vertical" />
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0.4"
-            android:src="@drawable/scrim" />
+            <org.fortune.widget.WallpaperBlurView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                android:orientation="vertical"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="45dp"
-            android:orientation="vertical"
-            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.4"
+                android:src="@drawable/scrim"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FortuneOS"
-                android:textSize="35sp"
-                style="@style/fortune_text_title" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="45dp">
 
-            <org.fortune.widget.FortuneVersionTextView
-                android:id="@+id/fortune_revision"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                style="@style/fortune_text_summary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FortuneOS"
+                    android:textSize="35sp"
+                    style="@style/fortune_text_title"/>
 
-        </LinearLayout>
+                <org.fortune.widget.FortuneVersionTextView
+                    android:id="@+id/fortune_revision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    style="@style/fortune_text_summary"/>
+                    
+            </LinearLayout>
 
-    </FrameLayout>
+        </FrameLayout>
 
-</com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

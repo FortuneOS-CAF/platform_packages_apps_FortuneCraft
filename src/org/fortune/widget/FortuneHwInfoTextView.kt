@@ -46,12 +46,14 @@ class FortuneHwInfoTextView : AppCompatTextView {
     private fun updateTextViews() {
         val parentView = rootView ?: return
 
+        val deviceCodename = parentView.findViewById<TextView>(R.id.fortune_device_codename)
         val battery = parentView.findViewById<TextView>(R.id.fortune_battery_capacity)
         val ram = parentView.findViewById<TextView>(R.id.fortune_ram)
         val camera = parentView.findViewById<TextView>(R.id.fortune_camera)
         val processor = parentView.findViewById<TextView>(R.id.fortune_processor)
         val display = parentView.findViewById<TextView>(R.id.fortune_display)
 
+        deviceCodename?.text = getDeviceCodename()
         battery?.text = getBatteryCapacity(mContext)
         ram?.text = getTotalRam()
         camera?.text = getCameraInfo(mContext)
@@ -123,9 +125,17 @@ class FortuneHwInfoTextView : AppCompatTextView {
                 }
             }
         }
+
+        rearCameras.sortDescending()
+
         val frontCameraText = if (frontCameras.isNotEmpty()) "Front: ${frontCameras.max()}MP" else "Front: Unknown"
         val rearCameraText = if (rearCameras.isNotEmpty()) "Rear: ${rearCameras.joinToString("MP + ")}MP" else "Rear: Unknown"
 
         return "$frontCameraText\n$rearCameraText"
     }
+
+    fun getDeviceCodename(): String {
+        return Build.DEVICE
+    }
+
 }
