@@ -114,4 +114,7 @@
     <string name="changelog_title">Current changelog</string>
     <string name="changelog_summary">View changes in the ROM installed</string>
     <string name="changelog_error">Unable to load changelog</string>
+
+    <!-- Home -->
+    <string name="wellbeing">Digital Wellbeing</string>
 </resources>
