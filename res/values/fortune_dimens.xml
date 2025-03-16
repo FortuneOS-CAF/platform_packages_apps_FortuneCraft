@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 FortuneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+     <!-- Cards -->
+     <dimen name="fortune_cardview_padding">16dp</dimen>
+     <dimen name="fortune_top_icn">42dp</dimen>
+     <dimen name="fortune_top_icn_max">52.5dp</dimen>
+     <dimen name="fortune_cardview_margin_list">16dip</dimen>
+     <dimen name="fortune_pref_vert">5.5dp</dimen>
+     <dimen name="fortune_card_radius">32dp</dimen>
+</resources>
