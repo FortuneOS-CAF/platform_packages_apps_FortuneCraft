@@ -11,4 +11,5 @@
      <dimen name="fortune_cardview_margin_list">16dip</dimen>
      <dimen name="fortune_pref_vert">5.5dp</dimen>
      <dimen name="fortune_card_radius">32dp</dimen>
+     <dimen name="craft_card_radius">12dp</dimen>
 </resources>

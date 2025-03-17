@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/craft_statusbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/craft_homepage_bg"
+            android:gravity="start|center_vertical"
+            android:minHeight="?android:listPreferredItemHeightSmall"
+            android:orientation="vertical"
+            android:paddingHorizontal="16.0dip"
+            android:paddingBottom="16.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="16.0dip"
+                android:gravity="start|center">
+
+                <androidx.preference.internal.PreferenceImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/craft_homepage_statusbar"
+                    app:maxHeight="52.5dp"
+                    app:maxWidth="52.5dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12.0dip">
+
+                <TextView
+                    android:id="@+id/craft_statusbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/craft_statusbar_title"
+                    android:textSize="18sp"
+                    style="@style/fortune_text_title"/>
+
+                <TextView
+                    android:id="@+id/craft_statusbar_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/craft_statusbar_title"
+                    android:layout_alignStart="@id/craft_statusbar_title"
+                    android:layout_alignLeft="@id/craft_statusbar_title"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/craft_statusbar_summary"
+                    android:textAlignment="viewStart"
+                    android:textSize="11.5sp"
+                    style="@style/fortune_text_summary"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/craft_quicksettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/craft_homepage_bg"
+            android:gravity="start|center_vertical"
+            android:minHeight="?android:listPreferredItemHeightSmall"
+            android:orientation="vertical"
+            android:paddingHorizontal="16.0dip"
+            android:paddingBottom="16.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="16.0dip"
+                android:gravity="start|center">
+
+                <androidx.preference.internal.PreferenceImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/craft_homepage_quicksettings"
+                    app:maxHeight="52.5dp"
+                    app:maxWidth="52.5dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12.0dip">
+
+                <TextView
+                    android:id="@+id/craft_quicksettings_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/craft_quicksettings_title"
+                    android:textSize="18sp"
+                    style="@style/fortune_text_title"/>
+
+                <TextView
+                    android:id="@+id/craft_quicksettings_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/craft_quicksettings_title"
+                    android:layout_alignStart="@id/craft_quicksettings_title"
+                    android:layout_alignLeft="@id/craft_quicksettings_title"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/craft_quicksettings_summary"
+                    android:textAlignment="viewStart"
+                    android:textSize="11.5sp"
+                    style="@style/fortune_text_summary"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <org.fortune.widget.WallpaperBlurView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:gravity="center"
+                    android:orientation="vertical"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:src="@drawable/scrim"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="45dp">
+
+                    <TextView
+                        style="@style/fortune_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fortune Craft"
+                        android:textColor="#FFFFFF"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <org.fortune.widget.FortuneVersionTextView
+                        android:id="@+id/fortune_revision"
+                        style="@style/fortune_text_summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16.0dip"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/craft_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/craft_homepage_bg"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="?android:listPreferredItemHeightSmall"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16.0dip"
+                    android:paddingBottom="16.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="16.0dip"
+                        android:gravity="start|center">
+
+                        <androidx.preference.internal.PreferenceImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/craft_homepage_navigation"
+                            app:maxHeight="52.5dp"
+                            app:maxWidth="52.5dp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.0dip">
+
+                        <TextView
+                            android:id="@+id/craft_navigation_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/craft_navigation_title"
+                            android:textSize="18sp"
+                            style="@style/fortune_text_title"/>
+
+                        <TextView
+                            android:id="@+id/craft_navigation_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/craft_navigation_title"
+                            android:layout_alignStart="@id/craft_navigation_title"
+                            android:layout_alignLeft="@id/craft_navigation_title"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/craft_navigation_summary"
+                            android:textAlignment="viewStart"
+                            android:textSize="11.5sp"
+                            style="@style/fortune_text_summary"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/craft_lockscreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/craft_homepage_bg"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="?android:listPreferredItemHeightSmall"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16.0dip"
+                    android:paddingBottom="16.0dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="16.0dip"
+                        android:gravity="start|center">
+
+                        <androidx.preference.internal.PreferenceImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/craft_homepage_lockscreen"
+                            app:maxHeight="52.5dp"
+                            app:maxWidth="52.5dp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.0dip">
+
+                        <TextView
+                            android:id="@+id/craft_lockscreen_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/craft_lockscreen_title"
+                            android:textSize="18sp"
+                            style="@style/fortune_text_title"/>
+
+                        <TextView
+                            android:id="@+id/craft_lockscreen_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/craft_lockscreen_title"
+                            android:layout_alignStart="@id/craft_lockscreen_title"
+                            android:layout_alignLeft="@id/craft_lockscreen_title"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/craft_lockscreen_summary"
+                            android:textAlignment="viewStart"
+                            android:textSize="11.5sp"
+                            style="@style/fortune_text_summary"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/craft_about"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/craft_homepage_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/craft_homepage_about"/>
+
+                    <TextView
+                        android:id="@+id/craft_about_title"
+                        style="@style/fortune_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/craft_about_title"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        style="@style/fortune_text_summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/craft_about_title"
+                        android:gravity="center"
+                        android:text="@string/craft_about_summary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/craft_misc"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/craft_homepage_bg"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            android:clickable="true"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:clipToOutline="true">
+            <TextView
+                android:id="@+id/craft_misc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/craft_misc_title"
+                android:textSize="18sp"
+                style="@style/fortune_text_title" />
+            <TextView
+                android:id="@+id/craft_misc_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/craft_misc_title"
+                android:layout_alignStart="@id/craft_misc_title"
+                android:layout_toStartOf="@id/craft_misc_icon"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/craft_misc_summary"
+                android:textSize="13sp"
+                style="@style/fortune_text_summary" />
+            <androidx.preference.internal.PreferenceImageView
+                android:id="@+id/craft_misc_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/craft_homepage_misc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
