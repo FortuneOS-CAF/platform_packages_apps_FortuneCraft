@@ -1,23 +1,16 @@
 package org.fortune.widget
 
 import android.content.Context
+import android.hardware.display.DisplayManager
 import android.os.Build
 import android.os.SystemProperties
-import android.hardware.display.DisplayManager
 import android.util.AttributeSet
 import android.view.Display
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatTextView
-import androidx.core.content.ContextCompat
-import android.app.ActivityManager
-import android.hardware.camera2.CameraCharacteristics
-import android.hardware.camera2.CameraManager
-import com.android.settings.R
 import com.android.internal.os.PowerProfile
 import com.android.internal.util.MemInfoReader
-import kotlin.math.ceil
-import kotlin.math.sqrt
+import com.android.settings.R
 import kotlin.math.roundToInt
 
 class FortuneHwInfoTextView : AppCompatTextView {
@@ -46,19 +39,29 @@ class FortuneHwInfoTextView : AppCompatTextView {
     private fun updateTextViews() {
         val parentView = rootView ?: return
 
-        val deviceCodename = parentView.findViewById<TextView>(R.id.fortune_device_codename)
+        val deviceModel = parentView.findViewById<TextView>(R.id.fortune_device_model)
         val battery = parentView.findViewById<TextView>(R.id.fortune_battery_capacity)
         val ram = parentView.findViewById<TextView>(R.id.fortune_ram)
         val camera = parentView.findViewById<TextView>(R.id.fortune_camera)
         val processor = parentView.findViewById<TextView>(R.id.fortune_processor)
         val display = parentView.findViewById<TextView>(R.id.fortune_display)
 
-        deviceCodename?.text = getDeviceCodename()
-        battery?.text = getBatteryCapacity(mContext)
+        deviceModel?.text = getDeviceModel()
+        battery?.text = getBatteryCapacity(context)
         ram?.text = getTotalRam()
-        camera?.text = getCameraInfo(mContext)
+        camera?.text = getCameraInfo()
         processor?.text = getProcessor()
-        display?.text = getScreenResolution(mContext)
+        display?.text = getScreenResolution(context)
+    }
+
+    fun getDeviceModel(): String {
+        return Build.MODEL
+    }
+
+    fun getBatteryCapacity(context: Context): String {
+        val powerProfile = PowerProfile(context)
+        val batteryCapacity = powerProfile.getAveragePower(PowerProfile.POWER_BATTERY_CAPACITY).roundToInt()
+        return "$batteryCapacity mAh"
     }
 
     fun getTotalRam(): String {
@@ -79,12 +82,6 @@ class FortuneHwInfoTextView : AppCompatTextView {
         return knownSizes.last()
     }
 
-    fun getBatteryCapacity(context: Context): String {
-        val powerProfile = PowerProfile(context)
-        val batteryCapacity = powerProfile.getAveragePower(PowerProfile.POWER_BATTERY_CAPACITY).roundToInt().toString()
-        return "${batteryCapacity} mAh"
-    }
-
     fun getScreenResolution(context: Context): String {
         val dm = context.getSystemService(DisplayManager::class.java)
         val display = dm?.getDisplay(Display.DEFAULT_DISPLAY)
@@ -94,48 +91,17 @@ class FortuneHwInfoTextView : AppCompatTextView {
     }
 
     fun getProcessor(): String {
-        return if (!Build.SOC_MODEL.equals(Build.UNKNOWN)) {
-            if (!Build.SOC_MANUFACTURER.equals(Build.UNKNOWN)) {
-                "${Build.SOC_MANUFACTURER} ${Build.SOC_MODEL}"
-            } else {
-                Build.SOC_MODEL
-            }
-        } else {
-            SystemProperties.get("ro.board.platform", "Unknown")
-        }
+        return SystemProperties.get("org.fortune.device.processor", "Unknown")
     }
 
-    fun getCameraInfo(context: Context): String {
-        val cameraManager = context.getSystemService(Context.CAMERA_SERVICE) as CameraManager
-        val cameraIds = cameraManager.cameraIdList
-        val rearCameras = mutableListOf<Int>()
-        val frontCameras = mutableListOf<Int>()
+    fun getCameraInfo(): String {
+        val front = SystemProperties.get("org.fortune.device.camera_front", "").trim()
+        val rear = SystemProperties.get("org.fortune.device.camera_rear", "").trim()
 
-        for (cameraId in cameraIds) {
-            val characteristics = cameraManager.getCameraCharacteristics(cameraId)
-            val lensFacing = characteristics.get(CameraCharacteristics.LENS_FACING)
-            val pixelArraySize = characteristics.get(CameraCharacteristics.SENSOR_INFO_PIXEL_ARRAY_SIZE)
+        val frontText = if (front.isNotEmpty()) "Front $front" else "Front Unknown"
+        val rearText = if (rear.isNotEmpty()) "Rear $rear" else "Rear Unknown"
 
-            if (pixelArraySize != null) {
-                val megapixels = (pixelArraySize.width * pixelArraySize.height) / 1_000_000
-
-                when (lensFacing) {
-                    CameraCharacteristics.LENS_FACING_FRONT -> frontCameras.add(megapixels)
-                    CameraCharacteristics.LENS_FACING_BACK -> rearCameras.add(megapixels)
-                }
-            }
-        }
-
-        rearCameras.sortDescending()
-
-        val frontCameraText = if (frontCameras.isNotEmpty()) "Front: ${frontCameras.max()}MP" else "Front: Unknown"
-        val rearCameraText = if (rearCameras.isNotEmpty()) "Rear: ${rearCameras.joinToString("MP + ")}MP" else "Rear: Unknown"
-
-        return "$frontCameraText\n$rearCameraText"
+        return "$frontText\n$rearText"
     }
-
-    fun getDeviceCodename(): String {
-        return Build.DEVICE
-    }
-
 }
+
